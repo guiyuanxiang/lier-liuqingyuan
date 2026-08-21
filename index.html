@@ -142,17 +142,20 @@
   }
   .statement strong { display: block; margin-bottom: 6px; }
 
-  /* 证据网格 */
+  /* 证据网格（瀑布流，适应不同比例截图） */
   .evidence-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 16px;
+    columns: 2;
+    column-gap: 16px;
   }
   .evidence-grid figure {
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 10px;
     overflow: hidden;
+    break-inside: avoid;
+    margin: 0 0 16px;
+    display: inline-block;
+    width: 100%;
   }
   .evidence-grid img {
     width: 100%;
@@ -190,6 +193,7 @@
   @media (max-width: 600px) {
     .hero h1 { font-size: 21px; }
     nav a { margin-left: 12px; }
+    .evidence-grid { columns: 1; }
   }
 </style>
 </head>
