@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于“翠翠草原”（刘青原）的本人受骗经历与证据公示</title>
+<meta name="description" content="受害者本人对与“翠翠草原”（刘青原）交易经过的第一人称陈述，附相关证据材料。">
+<style>
+  :root {
+    --bg: #f7f7f8;
+    --card: #ffffff;
+    --text: #22252a;
+    --muted: #6b7280;
+    --accent: #c0392b;
+    --accent-dark: #96281b;
+    --border: #e5e7eb;
+    --warn-bg: #fff7ed;
+    --warn-border: #fdba74;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+  }
+  a { color: var(--accent); }
+
+  /* 顶部声明条 */
+  .disclaimer-bar {
+    background: #fef2f2;
+    border-bottom: 1px solid #fecaca;
+    color: #991b1b;
+    font-size: 13px;
+    text-align: center;
+    padding: 8px 16px;
+  }
+
+  header.site-header {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .nav-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .site-title { font-weight: 700; font-size: 17px; }
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 18px;
+  }
+  nav a:hover { color: var(--accent); }
+
+  main { max-width: 960px; margin: 0 auto; padding: 24px 20px 64px; }
+
+  section { margin-top: 40px; scroll-margin-top: 80px; }
+  h2 {
+    font-size: 22px;
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+    margin-bottom: 18px;
+  }
+  h3 { font-size: 17px; margin: 18px 0 8px; }
+  p { margin-bottom: 12px; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px;
+  }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #7f1d1d, #b91c1c);
+    color: #fff;
+    border-radius: 12px;
+    padding: 36px 28px;
+  }
+  .hero h1 { font-size: 26px; line-height: 1.4; margin-bottom: 12px; }
+  .hero p { color: #fee2e2; font-size: 15px; }
+  .hero .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .hero .meta div {
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+  .hero .meta span { display: block; font-size: 12px; color: #fecaca; }
+
+  /* 声明 */
+  .statement {
+    background: var(--warn-bg);
+    border: 1px solid var(--warn-border);
+    border-radius: 10px;
+    padding: 18px 22px;
+    font-size: 14px;
+    color: #7c2d12;
+    margin-top: 24px;
+  }
+  .statement strong { display: block; margin-bottom: 6px; }
+
+  /* 时间线 */
+  .timeline { position: relative; padding-left: 26px; }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 8px; top: 4px; bottom: 4px;
+    width: 2px;
+    background: var(--border);
+  }
+  .timeline li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 22px;
+  }
+  .timeline li::before {
+    content: "";
+    position: absolute;
+    left: -24px; top: 9px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .timeline time {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 2px;
+  }
+
+  /* 证据网格 */
+  .evidence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+  .evidence-grid figure {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .evidence-grid img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    background: #eee;
+  }
+  .evidence-grid figcaption {
+    padding: 10px 14px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  /* 视频 */
+  video {
+    width: 100%;
+    max-width: 720px;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #000;
+  }
+
+  ul.plain { padding-left: 20px; }
+  ul.plain li { margin-bottom: 8px; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 24px 20px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 21px; }
+    nav a { margin-left: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="disclaimer-bar">
+  本网站为受害者个人经历陈述与证据展示，非司法机关结论。内容基于本人真实经历及所持证据，如有出入，以公安机关、法院认定为准。
+</div>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <div class="site-title">受骗经历与证据公示</div>
+    <nav>
+      <a href="#summary">事件概述</a>
+      <a href="#timeline">时间线</a>
+      <a href="#evidence">证据</a>
+      <a href="#video">道歉视频</a>
+      <a href="#tips">防骗提醒</a>
+      <a href="#rights">维权途径</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== 事件概述 ===================== -->
+  <section id="summary">
+    <div class="hero">
+      <h1>我在“翠翠草原”（刘青原）处付款后未获得对应履行<br>以下是我的亲身经历与所持证据</h1>
+      <p>本文全部内容为本人第一人称真实经历陈述，并附聊天记录、转账凭证等证据。发布目的：提醒他人注意核实、保留凭证，避免类似损失。</p>
+      <div class="meta">
+        <!-- TODO: 替换为你的真实信息 -->
+        <div><span>涉事账号 / 身份</span>“翠翠草原” · 刘青原</div>
+        <div><span>涉及金额</span>￥______（按实际填写）</div>
+        <div><span>发生时间</span>____年__月 至 ____年__月</div>
+        <div><span>交易方式</span>微信转账 / 支付宝 / 其他（按实际填写）</div>
+      </div>
+    </div>
+
+    <div class="statement">
+      <strong>郑重声明</strong>
+      <ol style="padding-left:18px;">
+        <li>本站内容为本人亲身经历的如实记录，所有关键事实均附有证据（截图、转账记录、视频等），原始材料已备份并可配合任何合法调查核验。</li>
+        <li>本站不进行任何超出事实的定性或人身攻击；是否构成违法违纪行为，以公安机关、人民法院等有权机关的最终认定为准。</li>
+        <li>若对方认为内容有误，欢迎通过页面底部联系方式与我沟通，核实后我会及时更正或补充说明。</li>
+        <li>请勿对本站内容进行断章取义式传播，转载请注明出处并保持完整。</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== 时间线 ===================== -->
+  <section id="timeline">
+    <h2>事件经过（时间线）</h2>
+    <div class="card">
+      <ul class="timeline">
+        <!-- TODO: 按你的实际经历修改每一条 -->
+        <li>
+          <time>____年__月__日</time>
+          通过 ______（平台/朋友介绍）认识对方，对方以“______”名义进行宣传。
+        </li>
+        <li>
+          <time>____年__月__日</time>
+          对方承诺 ______（具体承诺内容），我通过 ______ 方式支付第一笔款项 ￥______。
+        </li>
+        <li>
+          <time>____年__月__日</time>
+          约定事项未兑现，我提出质疑，对方以 ______ 为由拖延。
+        </li>
+        <li>
+          <time>____年__月__日</time>
+          再次催促后对方 ______（拉黑 / 失联 / 承诺退款但未履行 等）。
+        </li>
+        <li>
+          <time>____年__月__日</time>
+          对方录制道歉视频，承认 ______（视频中承认的内容，客观转述）。
+        </li>
+        <li>
+          <time>____年__月__日</time>
+          我已向 ______（公安机关 / 平台）提交报案材料，案件进展：______。
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== 证据 ===================== -->
+  <section id="evidence">
+    <h2>证据展示</h2>
+    <p style="color:var(--muted);font-size:14px;">以下为部分关键证据截图（原始完整记录已备份）。点击可查看大图。</p>
+    <br>
+    <div class="evidence-grid">
+      <!-- TODO: 把截图放到 assets 文件夹，替换下面的文件名和说明 -->
+      <figure>
+        <a href="assets/evidence1.jpg" target="_blank"><img src="assets/evidence1.jpg" alt="证据1"></a>
+        <figcaption>证据1：转账记录（金额、时间、收款方）</figcaption>
+      </figure>
+      <figure>
+        <a href="assets/evidence2.jpg" target="_blank"><img src="assets/evidence2.jpg" alt="证据2"></a>
+        <figcaption>证据2：对方承诺内容的聊天记录</figcaption>
+      </figure>
+      <figure>
+        <a href="assets/evidence3.jpg" target="_blank"><img src="assets/evidence3.jpg" alt="证据3"></a>
+        <figcaption>证据3：催促与推脱的对话记录</figcaption>
+      </figure>
+      <figure>
+        <a href="assets/evidence4.jpg" target="_blank"><img src="assets/evidence4.jpg" alt="证据4"></a>
+        <figcaption>证据4：其他补充证据</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== 道歉视频 ===================== -->
+  <section id="video">
+    <h2>道歉视频</h2>
+    <div class="card">
+      <p>以下为对方本人录制的道歉视频（未经剪辑，原始文件已备份）。视频中对方承认了 ______（客观描述视频内容）。</p>
+      <!-- TODO: 把视频放到 assets 文件夹，替换文件名 -->
+      <video controls preload="metadata">
+        <source src="https://yuzijian.oss-cn-beijing.aliyuncs.com/b8bad4a883b2b9d046dd13debc2715f0_raw.mp4" type="video/mp4">
+        您的浏览器不支持视频播放，请更新浏览器或
+        <a href="https://yuzijian.oss-cn-beijing.aliyuncs.com/b8bad4a883b2b9d046dd13debc2715f0_raw.mp4" target="_blank">点击此处直接观看/下载</a>。
+      </video>
+      <p style="margin-top:10px;font-size:13px;color:var(--muted);">
+        注：视频仅作事实记录用途。如视频无法加载，可尝试直接打开上方链接。
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== 防骗提醒 ===================== -->
+  <section id="tips">
+    <h2>防骗提醒</h2>
+    <div class="card">
+      <ul class="plain">
+        <li>大额交易前务必核实对方真实身份（实名信息、经营资质），网络昵称不可信。</li>
+        <li>所有承诺尽量落实到书面合同或聊天记录中，口头承诺维权极难。</li>
+        <li>付款保留完整凭证（转账截图、订单号、收款账户信息），不要删除聊天记录。</li>
+        <li>发现异常尽早止损，第一时间报警，不要因对方反复承诺而持续追加付款。</li>
+        <li>遇到类似情况，可通过国家反诈中心 APP 举报，并向平台投诉冻结相关账号。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== 维权途径 ===================== -->
+  <section id="rights">
+    <h2>如果你也遇到类似情况</h2>
+    <div class="card">
+      <ul class="plain">
+        <li><strong>报警：</strong>拨打 110 或前往属地派出所报案，经济诈骗达到立案标准即可刑事立案。</li>
+        <li><strong>国家反诈中心 APP：</strong>在线举报、提交证据材料。</li>
+        <li><strong>12315：</strong>涉及消费纠纷可向市场监督管理部门投诉。</li>
+        <li><strong>民事诉讼：</strong>凭转账凭证、聊天记录向法院起诉要求返还钱款。</li>
+        <li><strong>平台举报：</strong>在微信 / 支付宝 / 相关社交平台内举报对方账号，提交欺诈投诉。</li>
+      </ul>
+      <p style="margin-top:14px;font-size:14px;color:var(--muted);">
+        如你有与本事件相关的经历或证据，欢迎联系我：<strong>______（邮箱 / 微信，按需填写）</strong>。多人合并报案有助于提高立案效率。
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  本页面为个人经历陈述 · 发布于 ____年__月__日 · 原始证据已备份并愿意配合任何合法调查核验
+</footer>
+
+</body>
+</html>
