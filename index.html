@@ -117,35 +117,6 @@
   }
   .statement strong { display: block; margin-bottom: 6px; }
 
-  /* 时间线 */
-  .timeline { position: relative; padding-left: 26px; }
-  .timeline::before {
-    content: "";
-    position: absolute;
-    left: 8px; top: 4px; bottom: 4px;
-    width: 2px;
-    background: var(--border);
-  }
-  .timeline li {
-    list-style: none;
-    position: relative;
-    margin-bottom: 22px;
-  }
-  .timeline li::before {
-    content: "";
-    position: absolute;
-    left: -24px; top: 9px;
-    width: 10px; height: 10px;
-    border-radius: 50%;
-    background: var(--accent);
-  }
-  .timeline time {
-    display: block;
-    font-size: 13px;
-    color: var(--muted);
-    margin-bottom: 2px;
-  }
-
   /* 证据网格 */
   .evidence-grid {
     display: grid;
@@ -209,11 +180,11 @@
     <div class="site-title">受骗经历与证据公示</div>
     <nav>
       <a href="#summary">事件概述</a>
-      <a href="#timeline">时间线</a>
       <a href="#evidence">证据</a>
       <a href="#video">道歉视频</a>
       <a href="#tips">防骗提醒</a>
       <a href="#rights">维权途径</a>
+      <a href="https://docs.qq.com/doc/DWmRncndlZlFlVUhG?u=3a75571cd6a94347ad9128d940def42c" target="_blank" rel="noopener"><strong>详细文档 ↗</strong></a>
     </nav>
   </div>
 </header>
@@ -223,15 +194,34 @@
   <!-- ===================== 事件概述 ===================== -->
   <section id="summary">
     <div class="hero">
-      <h1>我在“翠翠草原”（刘青原）处付款后未获得对应履行<br>以下是我的亲身经历与所持证据</h1>
-      <p>本文全部内容为本人第一人称真实经历陈述，并附聊天记录、转账凭证等证据。发布目的：提醒他人注意核实、保留凭证，避免类似损失。</p>
+      <h1>我在“翠翠草原”（刘青原）处付款委托毕业设计<br>收款后做不出来、拒不退款——以下是我的亲身经历与所持证据</h1>
+      <p>刘青原长期在网上承接毕业设计代做，收钱后无法完成交付；为赶工四处找人代写并承诺支付报酬，事后却拒不结款，甚至在对话中直言要“白嫖”。本文全部内容为本人第一人称真实经历陈述，并附聊天记录、转账凭证及对方道歉视频。</p>
       <div class="meta">
         <!-- TODO: 替换为你的真实信息 -->
         <div><span>涉事账号 / 身份</span>“翠翠草原” · 刘青原</div>
         <div><span>涉及金额</span>￥______（按实际填写）</div>
-        <div><span>发生时间</span>____年__月 至 ____年__月</div>
-        <div><span>交易方式</span>微信转账 / 支付宝 / 其他（按实际填写）</div>
+        <div><span>交易内容</span>毕业设计代做委托</div>
       </div>
+      <p style="margin-top:20px;">
+        <a href="https://docs.qq.com/doc/DWmRncndlZlFlVUhG?u=3a75571cd6a94347ad9128d940def42c" target="_blank" rel="noopener"
+           style="display:inline-block;background:#fff;color:#7f1d1d;font-weight:600;text-decoration:none;padding:10px 22px;border-radius:8px;">
+          查看完整事件文档 ↗
+        </a>
+      </p>
+    </div>
+
+    <div class="card" style="margin-top:24px;">
+      <h3 style="margin-top:0;">涉事行为模式（均有聊天记录佐证）</h3>
+      <ul class="plain">
+        <li>在网上以“翠翠草原”名义承接<strong>毕业设计代做</strong>，收取费用；</li>
+        <li><strong>收款后做不出来</strong>，临近截止日期仍无法交付，以各种理由拖延；</li>
+        <li>为解决问题<strong>四处找人代写/求助，承诺支付报酬，事后拒不结款</strong>；</li>
+        <li>被追讨时<strong>大言不惭表示要“白嫖”</strong>（原话截图见证据区）；</li>
+        <li>事后录制道歉视频承认相关事实，但<strong>未退款、未赔偿</strong>。</li>
+      </ul>
+      <p style="margin-bottom:0;font-size:14px;color:var(--muted);">
+        如果你也曾付款给对方却未收到成果，或曾被对方以“给钱”为承诺找去帮忙却拿不到报酬——欢迎通过页面底部联系方式联系我，合并证据、共同维权。
+      </p>
     </div>
 
     <div class="statement">
@@ -245,44 +235,12 @@
     </div>
   </section>
 
-  <!-- ===================== 时间线 ===================== -->
-  <section id="timeline">
-    <h2>事件经过（时间线）</h2>
-    <div class="card">
-      <ul class="timeline">
-        <!-- TODO: 按你的实际经历修改每一条 -->
-        <li>
-          <time>____年__月__日</time>
-          通过 ______（平台/朋友介绍）认识对方，对方以“______”名义进行宣传。
-        </li>
-        <li>
-          <time>____年__月__日</time>
-          对方承诺 ______（具体承诺内容），我通过 ______ 方式支付第一笔款项 ￥______。
-        </li>
-        <li>
-          <time>____年__月__日</time>
-          约定事项未兑现，我提出质疑，对方以 ______ 为由拖延。
-        </li>
-        <li>
-          <time>____年__月__日</time>
-          再次催促后对方 ______（拉黑 / 失联 / 承诺退款但未履行 等）。
-        </li>
-        <li>
-          <time>____年__月__日</time>
-          对方录制道歉视频，承认 ______（视频中承认的内容，客观转述）。
-        </li>
-        <li>
-          <time>____年__月__日</time>
-          我已向 ______（公安机关 / 平台）提交报案材料，案件进展：______。
-        </li>
-      </ul>
-    </div>
-  </section>
-
   <!-- ===================== 证据 ===================== -->
   <section id="evidence">
     <h2>证据展示</h2>
-    <p style="color:var(--muted);font-size:14px;">以下为部分关键证据截图（原始完整记录已备份）。点击可查看大图。</p>
+    <p style="color:var(--muted);font-size:14px;">
+      完整事件经过与证据整理见 <a href="https://docs.qq.com/doc/DWmRncndlZlFlVUhG?u=3a75571cd6a94347ad9128d940def42c" target="_blank" rel="noopener"><strong>在线文档 ↗</strong></a>，以下为部分关键证据截图（原始完整记录已备份），点击可查看大图。
+    </p>
     <br>
     <div class="evidence-grid">
       <!-- TODO: 把截图放到 assets 文件夹，替换下面的文件名和说明 -->
@@ -292,15 +250,15 @@
       </figure>
       <figure>
         <a href="assets/evidence2.jpg" target="_blank"><img src="assets/evidence2.jpg" alt="证据2"></a>
-        <figcaption>证据2：对方承诺内容的聊天记录</figcaption>
+        <figcaption>证据2：毕设委托约定与承诺交付的聊天记录</figcaption>
       </figure>
       <figure>
         <a href="assets/evidence3.jpg" target="_blank"><img src="assets/evidence3.jpg" alt="证据3"></a>
-        <figcaption>证据3：催促与推脱的对话记录</figcaption>
+        <figcaption>证据3：对方找人代写并承诺付报酬的聊天记录</figcaption>
       </figure>
       <figure>
         <a href="assets/evidence4.jpg" target="_blank"><img src="assets/evidence4.jpg" alt="证据4"></a>
-        <figcaption>证据4：其他补充证据</figcaption>
+        <figcaption>证据4：被追讨时表示要“白嫖”的原话截图</figcaption>
       </figure>
     </div>
   </section>
@@ -309,7 +267,7 @@
   <section id="video">
     <h2>道歉视频</h2>
     <div class="card">
-      <p>以下为对方本人录制的道歉视频（未经剪辑，原始文件已备份）。视频中对方承认了 ______（客观描述视频内容）。</p>
+      <p>以下为对方本人录制的道歉视频（未经剪辑，原始文件已备份）。视频中对方承认了 ______（客观描述：如收款未交付、找人代写未付报酬等事实）。</p>
       <!-- TODO: 把视频放到 assets 文件夹，替换文件名 -->
       <video controls preload="metadata">
         <source src="https://yuzijian.oss-cn-beijing.aliyuncs.com/b8bad4a883b2b9d046dd13debc2715f0_raw.mp4" type="video/mp4">
@@ -348,7 +306,7 @@
         <li><strong>平台举报：</strong>在微信 / 支付宝 / 相关社交平台内举报对方账号，提交欺诈投诉。</li>
       </ul>
       <p style="margin-top:14px;font-size:14px;color:var(--muted);">
-        如你有与本事件相关的经历或证据，欢迎联系我：<strong>______（邮箱 / 微信，按需填写）</strong>。多人合并报案有助于提高立案效率。
+        如你也付款给对方却未收到成果，或曾被对方承诺“给钱”找去帮忙却拿不到报酬，欢迎联系我：<strong>______（邮箱 / 微信，按需填写）</strong>。受害者合并报案有助于提高立案效率。
       </p>
     </div>
   </section>
@@ -356,7 +314,7 @@
 </main>
 
 <footer>
-  本页面为个人经历陈述 · 发布于 ____年__月__日 · 原始证据已备份并愿意配合任何合法调查核验
+  本页面为个人经历陈述 · 原始证据已备份并愿意配合任何合法调查核验
 </footer>
 
 </body>
